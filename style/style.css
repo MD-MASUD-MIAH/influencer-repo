@@ -110,7 +110,7 @@ body{
 }
 
 .hero-2{
-   
+   width: 475px;
     height: 475px;
     background-image: url("../images/Circle\ design.svg");
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body{
     justify-content: center;
     align-items: center;
    background-position: center;
-   background-size: contain;
+   background-size: cover;
    
 }
 
@@ -180,6 +180,14 @@ body{
     font-size: 14px;
 }
 
-
+.hero-2{
+    height: 257px;
+    width: 257px;
+    margin: 100px;
+}
+.hero-2 div img{
+    height: 202px;
+    width: 190px;
+}
       }
     
