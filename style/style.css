@@ -158,8 +158,8 @@ font-weight: 600;
 }
 
 .card{
-  height: 476px;
-  width: 329px;
+  max-height: 476px;
+  max-width: 329px;
   border-radius: 5px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
    background: rgb(255, 255, 255);
@@ -228,10 +228,68 @@ text-align: left;
 
 
 
+.btn{
+  font-size: 1rem;
+  color: rgba(224, 44, 109, 0.87);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-div{
+  padding-top: 60px;
+  max-width: 1047px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  
+}
+
+.gear-container{
+  padding: 20px;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.gear-title{
+  color: rgb(10, 8, 38);
+font-family: Poppins;
+font-size: 2.25;
+font-weight: 700;
+
+}
+
+.sub-title{
+  color: rgb(108, 108, 108);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+
+}
+
+.sub-btn{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px 10px 24px;
+  background-color: rgb(224, 44, 109);
+  border: none;
+ color: white;
+font-size: 1rem;
+font-weight: 700;
 
 
-
-
+}
 
 
 
@@ -331,6 +389,10 @@ text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.gear-container{
+  flex-direction: column;
 }
 
       }
