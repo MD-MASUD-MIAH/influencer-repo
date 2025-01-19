@@ -3,13 +3,18 @@
 
 
 /* style sheet  */
+
+/* *{
+  padding: 0;
+  margin: 0;
+} */
 .poppon{
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
   }
 body{
-    
+    overflow-x: hidden;
 }
 
 
@@ -123,7 +128,130 @@ body{
 }
 
 
-  /* for tablet resonsive  */
+.company{
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.company-logo{
+  display: flex ;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 64px;
+  gap: 50px;
+  
+}
+
+.products-section{
+  max-width: 1047px;
+  margin: 0 auto;
+  text-align: center;
+}
+.products-section .title{
+  margin-bottom: 30px;
+  color: rgb(58, 58, 58);
+
+font-size: 1.75rem;
+font-weight: 600;
+
+}
+
+.card{
+  height: 476px;
+  width: 329px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+   background: rgb(255, 255, 255);
+  
+}
+
+.products{
+
+ 
+  margin: 0px 15px;
+  padding-top: 17px;
+}
+
+.products div div i{
+  color:rgb(251, 130, 0);;
+}
+
+.card div{
+  text-align: start;
+ 
+}
+
+.name{
+  
+  color: rgb(24, 25, 31);
+
+font-size: 1.75rem;
+font-weight: 500;
+display: inline;
+
+}
+
+.products img{
+  margin-bottom: 10px;
+}
+.products div h3 {
+
+  color: rgba(0, 0, 0, 0.87);
+font-family: Inter;
+font-size: 1.5rem;
+font-weight: 400;
+margin-bottom: 10px;
+margin-top: 10px;
+
+}
+.products div div p{
+  margin-top: 5px;
+  color: rgb(120, 120, 133);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+line-height: 143%;
+letter-spacing: 1.8%;
+text-align: left;
+}
+
+.card-container{
+  max-width: 1047px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* for tablet responsive  */
 
   @media screen and (min-width: 577px) and (max-width:992px) {
     
@@ -136,11 +264,14 @@ body{
     flex-direction: column-reverse;
 }
 
+.card-container{
+  grid-template-columns: repeat(2, 1fr);
+}
 
   }
 
 
-   /* for mobile resposive  */
+   /* for mobile responsive  */
 
    @media screen and (max-width: 576px) {
      
@@ -189,5 +320,18 @@ body{
     height: 202px;
     width: 190px;
 }
+
+.card-container{
+  grid-template-columns: repeat(1, 1fr);
+ align-items: center;
+ justify-content: center;
+}
+
+.products-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
       }
     
